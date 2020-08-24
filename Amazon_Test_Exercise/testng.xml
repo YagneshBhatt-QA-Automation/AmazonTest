@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Amazon App Tests" verbose="1" parallel="tests" thread-count="1" configfailurepolicy="continue">
+
+    <listeners>
+        <listener class-name="com.Amazon_App.listeners.Transformer" />
+    </listeners>
+
+    <test name="Amazon App Tests" annotations="JDK" preserve-order="true">
+        <classes>
+            <class name="com.Amazon_App.testcases.DriverScript"/>
+        </classes>
+    </test>
+</suite>

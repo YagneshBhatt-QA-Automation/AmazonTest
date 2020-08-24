@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" configfailurepolicy="continue" guice-stage="DEVELOPMENT" name="Failed suite [Amazon App Tests]" parallel="tests">
+  <listeners>
+    <listener class-name="com.Amazon_App.listeners.Transformer"/>
+  </listeners>
+  <test thread-count="1" name="Amazon App Tests(failed)" parallel="tests">
+    <classes>
+      <class name="com.Amazon_App.testcases.DriverScript">
+        <methods>
+          <include name="getResult"/>
+          <include name="tearDown"/>
+          <include name="VerifyCartPrd"/>
+          <include name="LoginAndSearch"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.Amazon_App.testcases.DriverScript -->
+    </classes>
+  </test> <!-- Amazon App Tests(failed) -->
+</suite> <!-- Failed suite [Amazon App Tests] -->
